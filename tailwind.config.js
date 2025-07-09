@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{ts,tsx}",
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx,js,jsx,mdx}",
+    "./components/**/*.{ts,tsx,js,jsx}",
+    "./pages/**/*.{ts,tsx,js,jsx}",
+    "./public/**/*.html",
   ],
   theme: {
     extend: {},
@@ -12,4 +13,11 @@ module.exports = {
   daisyui: {
     themes: ["light", "dark"],
   },
+  safelist: [
+    "btn",
+    "btn-primary",
+    "btn-secondary",
+    "alert",
+    "toast",
+  ],
 };
