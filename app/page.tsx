@@ -2,6 +2,7 @@
 import Header from "@/app/components/header";
 import Main from "@/app/components/main";
 import ThemeToggle from "./components/toggle_themes";
+import "./globals.css";
 
 export default function Home() {
   return (
