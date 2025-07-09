@@ -65,7 +65,7 @@ function ProjectCard({ project, i }: { project: Project; i: number }) {
     >
       <motion.div
         variants={cardVariants}
-        className="bg-base-200 rounded-xl shadow-lg p-6 flex flex-col"
+        className="bg-base-300 rounded-xl p-6 flex flex-col"
       >
         <img
           src={project.image}
@@ -74,7 +74,7 @@ function ProjectCard({ project, i }: { project: Project; i: number }) {
         />
         <h3 className="text-xl font-bold mb-2">{project.title}</h3>
         <p className="text-base-600 mb-2">{project.description}</p>
-        <small className="text-gray-400">{project.tech.join(", ")}</small>
+        <small className="">{project.tech.join(", ")}</small>
       </motion.div>
     </motion.div>
   );

@@ -51,19 +51,19 @@ export default function ExperienceSection() {
             className="flex flex-col md:flex-row md:items-center md:gap-8"
           >
             {/* Date Range */}
-            <div className="md:w-1/4 text-sm text-gray-400 font-mono uppercase tracking-wide mb-2 md:mb-0">
+            <div className="md:w-1/4 text-sm  font-mono uppercase tracking-wide mb-2 md:mb-0">
               {item.period}
             </div>
 
             {/* Content */}
             <div className="md:w-3/4 bg-base-200 p-6 rounded-lg border border-gray-800">
-              <h3 className="text-lg font-bold text-white mb-1">
+              <h3 className="text-lg font-bold  mb-1">
                 {item.role}{" "}
                 <span className="text-primary-400 font-medium">
                   · {item.company}
                 </span>
               </h3>
-              <p className="text-gray-400">{item.description}</p>
+              <p className="text-gray-500">{item.description}</p>
             </div>
           </motion.div>
         ))}
