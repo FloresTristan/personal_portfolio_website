@@ -32,11 +32,12 @@ export default function Header() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <div className="flex flex-col md:flex-row min-w-max justify-around md:items-start items-center md:justify-start">
-          <div className="avatar md:w-24 online pb-3 md:pb-4 md:pl-2 md:mr-5">
-            <div className="rounded-full">
+        <div className="flex flex-col md:flex-row min-w-max justify-around md:items-center items-center md:justify-start">
+          <div className="avatar w-36 md:w-36 online pb-3 md:pb-4 md:pl-2 md:mr-5">
+            <div className="rounded-full bg-base-300 border border-primary">
               <img
-                src="https://img.daisyui.com/images/profile/demo/gordon@192.webp"
+                // src="https://img.daisyui.com/images/profile/demo/gordon@192.webp"
+                src="./profile/profile.png"
                 alt="Profile"
               />
             </div>
