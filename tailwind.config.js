@@ -1,23 +1,16 @@
+const { default: themes } = require('daisyui/theme/object');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./app/**/*.{ts,tsx,js,jsx,mdx,css}",
-    "./components/*.{ts,tsx,js,jsx}",
-    "./pages/**/*.{ts,tsx,js,jsx}",
-    "./public/**/*.html",
-  ],
+  content: ["./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",],
   theme: {
     extend: {},
   },
   plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["light", "dark"],
-  },
-  safelist: [
-    "btn",
-    "btn-primary",
-    "btn-secondary",
-    "alert",
-    "toast",
-  ],
-};
+  daisyui:{
+    themes: ["light", "dark"]
+  }
+}
+
