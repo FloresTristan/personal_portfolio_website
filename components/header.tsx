@@ -74,14 +74,14 @@ export default function Header() {
                     className={`nav-indicator mr-4 h-px w-8 transition-all ${
                       activeSection === href.slice(1)
                         ? "w-16 bg-primary"
-                        : "bg-slate-600 group-hover:w-16 group-hover:bg-slate-200"
+                        : "group-hover:w-16 group-hover:bg-primary"
                     } motion-reduce:transition-none`}
                   ></span>
                   <span
                     className={`nav-text text-xs font-bold uppercase tracking-widest ${
                       activeSection === href.slice(1)
                         ? "text-primary"
-                        : "text-slate-500 group-hover:text-slate-200"
+                        : "text-tertiary group-hover:text-primary"
                     }`}
                   >
                     {label}

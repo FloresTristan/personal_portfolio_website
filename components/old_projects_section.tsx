@@ -2,6 +2,7 @@
 
 import * as motion from "motion/react-client";
 import type { Variants } from "motion/react";
+import Link from "next/link";
 
 interface Project {
   title: string;
@@ -13,7 +14,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Personal Portfolio",
-    description: "A clean, responsive portfolio built with Next.js and Tailwind CSS.",
+    description: "My second iteration for a responsive portfolio built with Next.js and Tailwind CSS.",
     tech: ["Next.js", "Tailwind CSS", "Vercel"],
     image: "/projects/portfolioNext.png",
   },
@@ -49,6 +50,11 @@ export default function ProjectsSection() {
       {projects.map((project, i) => (
         <ProjectCard project={project} i={i} key={project.title} />
       ))}
+      <div className="flex justify-center mt-8">
+        <Link href="/projects" className="btn btn-primary">
+          See all projects
+        </Link>
+      </div>
     </section>
   );
 }
