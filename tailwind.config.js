@@ -1,4 +1,3 @@
-const { default: themes } = require('daisyui/theme/object');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

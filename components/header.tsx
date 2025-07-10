@@ -33,7 +33,7 @@ export default function Header() {
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
       <div>
         <div className="flex min-w-max justify-around items-center md:justify-start">
-          <div className="avatar avatar-online pb-5">
+          <div className="avatar online pb-5">
             <div className="w-24 rounded-full">
               <img
                 src="https://img.daisyui.com/images/profile/demo/gordon@192.webp"
