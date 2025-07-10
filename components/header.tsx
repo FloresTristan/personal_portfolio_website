@@ -98,7 +98,7 @@ export default function Header() {
       <ul className="ml-1 mt-8 flex items-center">
         <li className="mr-5 shrink-0 text-xs">
           <a
-            className="block hover:text-slate-200"
+            className="block hover:text-primary"
             href="mailto:michaeltristanflores646@gmail.com"
           >
             <span className="sr-only">Gmail</span>
@@ -107,7 +107,7 @@ export default function Header() {
         </li>
         <li className="mr-5 shrink-0 text-xs">
           <a
-            className="block hover:text-slate-200"
+            className="block hover:text-primary"
             href="https://www.linkedin.com/in/michael-tristan-flores"
           >
             <span className="sr-only">LinkedIn</span>
@@ -116,7 +116,7 @@ export default function Header() {
         </li>
         <li className="mr-5 shrink-0 text-xs">
           <a
-            className="block hover:text-slate-200"
+            className="block hover:text-primary"
             href="https://github.com/FloresTristan"
           >
             <span className="sr-only">Github</span>
@@ -125,7 +125,7 @@ export default function Header() {
         </li>
         <li className="mr-5 shrink-0 text-xs">
           <a
-            className="block hover:text-slate-200"
+            className="block hover:text-primary"
             href="https://facebook.com/michaeltristan.flores"
           >
             <span className="sr-only">FaceBook</span>
