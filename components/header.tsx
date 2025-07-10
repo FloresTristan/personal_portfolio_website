@@ -32,16 +32,16 @@ export default function Header() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <div className="flex min-w-max justify-around items-center md:justify-start">
-          <div className="avatar online pb-5">
-            <div className="w-24 rounded-full">
+        <div className="flex flex-col md:flex-row min-w-max justify-around md:items-start items-center md:justify-start">
+          <div className="avatar md:w-24 online pb-3 md:pb-4 md:pl-2 md:mr-5">
+            <div className="rounded-full">
               <img
                 src="https://img.daisyui.com/images/profile/demo/gordon@192.webp"
                 alt="Profile"
               />
             </div>
           </div>
-          <div className="md:pl-5">
+          <div className="flex flex-col items-center md:items-start">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Michael Flores
             </h1>
@@ -50,7 +50,7 @@ export default function Header() {
             </h2>
           </div>
         </div>
-        <p className="mt-4 max-w-xs leading-normal">
+        <p className="mt-4 max-w-xl md:max-w-xs leading-normal text-center md:text-start">
           I build modern web applications with kinda clean code and thoughtful
           design.
         </p>
