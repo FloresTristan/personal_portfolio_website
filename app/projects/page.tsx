@@ -10,6 +10,7 @@ interface Repo {
   description: string | null;
   stargazers_count: number;
   html_url: string;
+  language: string | null; // ✅ add language field
 }
 
 export default function AllProjectsPage() {
@@ -29,7 +30,9 @@ export default function AllProjectsPage() {
       className="max-w-6xl mx-auto p-5"
     >
       <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
-        <h1 className="text-3xl font-bold text-center sm:text-left">All GitHub Repositories</h1>
+        <h1 className="text-3xl font-bold text-center sm:text-left">
+          All Project Repos
+        </h1>
         <Link href="/" className="btn btn-outline btn-primary">
           ← Back to Home
         </Link>
@@ -46,14 +49,24 @@ export default function AllProjectsPage() {
             <tr>
               <th>Name</th>
               <th className="min-w-[200px]">Description</th>
+              <th>Language</th>
               <th>Link</th>
             </tr>
           </thead>
           <tbody>
             {repos.map((repo) => (
               <motion.tr key={repo.id} className="hover">
-                <td className="font-bold whitespace-pre-wrap break-words ">{repo.name}</td>
-                <td className="whitespace-pre-wrap break-words">{repo.description || "No description"}</td>
+                <td className="font-bold break-words">{repo.name}</td>
+                <td className="whitespace-pre-wrap break-words">
+                  {repo.description || "No description"}
+                </td>
+                <td>
+                  {repo.language ? (
+                    <span className="badge badge-secondary">{repo.language}</span>
+                  ) : (
+                    <span className="badge badge-ghost">Unknown</span>
+                  )}
+                </td>
                 <td>
                   <a
                     href={repo.html_url}
