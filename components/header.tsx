@@ -51,8 +51,7 @@ export default function Header() {
           </div>
         </div>
         <p className="mt-4 max-w-xl md:max-w-xs leading-normal text-center md:text-start">
-          I build modern web applications with kinda clean code and thoughtful
-          design.
+          I build modern web applications with known technologies like ReactJs/NextJs, Python and its libraries.
         </p>
 
         <nav className="nav hidden lg:block">
