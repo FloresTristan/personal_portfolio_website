@@ -35,10 +35,10 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="btn border opacity-60 hover:opacity-100 duration-200 transition-all border-base-200"
+      className="btn border rounded-full opacity-100 duration-200 transition-all border-base-200"
       aria-label="Toggle Theme"
     >
-      {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
+      {theme === "light" ? "🌙" : "☀️"}
     </button>
   );
 }
